@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Patient Details</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            color:#033E75;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto repeat(3, 1fr) auto; /* Added auto row for the h1 and search bar */
+            grid-template-columns: repeat(3, 1fr);
+            height: 100vh;
+        }
+
+        h1 {
+            grid-column: 1 / -1; /* Span across all columns */
+            background-color: #033E75;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #033E75;
+            color: white;
+            display: flex;
+            flex-direction: column; /* Display other details below general details */
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 10px; /* Reduced padding */
+        }
+
+        .box h3, .box p {
+            margin: 5px 0; /* Reduced spacing between lines */
+        }
+
+        .search-container {
+            grid-column: 1 / -1; /* Span across all columns */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        /* Style for the search input */
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #033E75;
+            border-radius: 5px;
+            outline: none;
+            width: 300px;
+        }
+
+        /* Style for the search button */
+        .search-button {
+            padding: 10px 20px;
+            background-color: #033E75;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the search button */
+        .search-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Patient Details</h1>
+    <div class="box">
+        <h3>General Details</h3>
+        <p>Name: Ishwarya</p>
+        <p>Age: 20</p>
+        <p>Gender: Female</p>
+        <p>Contact no: 1234567890</p>
+    </div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+    <div class="box">Box 6</div>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search for departments...">
+        <button class="search-button">Search</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+    <style>
+        .search-container {
+            display: flex;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* Style for the search input */
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+
+        /* Style for the search button */
+        .search-button {
+            padding: 10px 20px;
+            background-color: #033E75;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            margin-left: 500px;
+        }
+
+        /* Hover effect for the search button */
+        .search-button:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 10vh; 
+            width: 10vh;Adjust as needed */
+            position: relative;
+        }
+
+        /* Style for the image */
+        .centered-image {
+            max-width: 100%;
+            max-height: 100%;
+            width: 100px;
+            height: 100px;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            color:#033E75;
+        }
+        .any-div{
+            display: flex;
+            justify-content: center;
+
+            
+            /* align-items: center; */
+            padding: 20px;
+            margin-right: 50px;
+
+        }
+      .not-button{
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #033E75;
+        color:white;
+        font-size: 15px;
+      }
+      
+      .button-container {
+
+    display: flex;
+    justify-content: flex-start;
+}
+.button-home {
+ 
+  color: #033E75;
+  border: 2px solid #DF8029;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+    </style>
+
+</head>
+<body style="background-color: white;  font-family: 'Roboto', sans-serif;">
+    <h1 style="text-align: center; color:#033E75; font-size: 50px;">Dashboard</h1>
+    <div class="search-container">
+        <form action="/searchProblem" method="post">
+            <input type="text" class="search-input" name="search_query" placeholder="Describe your problem...">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+   
+    <div class="container">
+<img src="{{ url_for('static', filename='user.png') }}" class="centered-image">
+    </div>
+    <div style="text-align: center;">
+        <h3>walter</h3>
+       
+       <h3>30 years</h3>
+    </div>
+    <div class="any-div">
+        <div class="notifications" style="padding-right: 50px;">
+            <h1>Upcoming<br> Appointments</h1>
+            <button class="not-button">
+            
+            <p >no appointments </p><br>
+        
+        </button>
+        </div>
+    <div style="text-align: left; padding-right: 100px;">
+        <h1>User Details</h1>
+        <p>Contact-no : 1234567890</p>
+        <p>Location : abc</p>
+        <p>Occupation : student</p>
+        <p>Gender : Male</p>
+        <p>Medical reports : med_records.pdf</p>
+    </div>
+    <div class="notifications">
+        <h1>Medications</h1>
+        <a href="/register" ><button class="not-button" >Paracetamol - 1 <br>25.03.2024,3:30pm </button></a><br>
+
+        <a href="/register" ><button class="not-button" style="margin-top: 15px;">Paracetamol - 1 <br>26.03.2024,7:30pm </button></a>
+</div>
+
+
+
+
+    </div>
+    <div class="any-div" style="padding-left: 150px; padding-right: 100px;">
+        <a href="/details" style="padding-right: 100px;"><button class="button-home">Book Appointment</button></a>
+        <a href="/register"><button class="button-home">Health Issues</button></a>
+    
+        
+        
+        
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

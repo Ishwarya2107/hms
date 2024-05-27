@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .register-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #033E75;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .register-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register_data" method="post" enctype="multipart/form-data">
+        <h1>Confirm Appointment</h1>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="timing">Timing:</label>
+        <input type="text" id="timing" name="timing" required>
+
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place" required>
+
+        <label for="info">Info:</label>
+        <textarea id="info" name="info" required></textarea>
+
+        <label for="fee">Fee:</label>
+        <input type="number" id="fee" name="fee" required>
+
+        
+        
+
+        <input type="submit" value="Send" class="register-button">
+    </form>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Connect</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #033E75;
+        }
+ 
+    
+       ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #033E75;
+}
+
+li {
+  float: right;
+  padding : 50px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.button-home {
+  background-color: #033E75;
+  color: white;
+  border: 2px solid #DF8029;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.home-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+ 
+}
+.home-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+.button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.home-img{
+    width:800px;
+    height:500px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#news">Services</a></li>
+        <li><a href="#home">Contact</a></li>
+        <li><a href="#news">About</a></li>
+        <li><a href="#contact">Home</a></li>
+        <li style="float:left; padding-left: 100px; font-size: 25px;"><a  href="#about">Care Connect</a></li>
+      </ul>
+
+      <div class="container">
+        
+        <div style="flex: 1;">
+            <h1 class="home-text" style="padding-left: 100px;font-size: 50px;padding-right: 300px;">Find The Best Doctor For Your Health Care</h1>
+            <p class="home-text" style="padding-left: 100px;padding-right:200px;padding-bottom: 50px;">
+                Discover leading hospitals and effortlessly schedule appointments for your health needs on our user-friendly platform! Take control of your healthcare journey today.            </p>
+            <div class="button-container" style="padding-left: 100px; padding-right: 100px;">
+                <a href="/login" style="padding-right: 100px;"><button class="button-home">Login</button></a>
+                <a href="/register"><button class="button-home">Register</button></a>
+            
+                
+                
+                
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <div style="padding-right: 200px">
+            <img class="home-img" src="{{ url_for('static', filename='doc-removebg-preview.png') }}" alt="Limousine">
+        </div>
+    </div>
+    
+</body>
+</html>

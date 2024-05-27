@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PSG Hospitals</title>
+    <style>
+        /* Global styles for headings */
+        h1, h2 {
+            color: #033E75; /* Set color to blue (#033E75) for both h1 and h2 */
+            text-align: left; /* Align headings to the left */
+        }
+
+        /* Style for the container div */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left */
+            margin-left: 20px; /* Add left margin for spacing */
+        }
+
+        /* Style for the blue boxes */
+        .blue-box {
+            width: 60%; /* Adjust width as needed */
+            max-width: 300px; /* Set a maximum width for responsiveness */
+            border: 2px solid #033E75; /* Blue border (#033E75) */
+            border-radius: 10px; /* Rounded corners */
+            padding: 10px; /* Spacing inside the box */
+            margin-bottom: 20px; /* Margin between boxes */
+            background-color: #033E75; /* Blue background color */
+        }
+
+        /* Style for headings inside blue boxes */
+        .blue-box h3, .blue-box p {
+            color: white; /* Set text color to white */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Style for the image */
+        img {
+            position: absolute; /* Position the image absolutely */
+            top: 50%; /* Align the top of the image to the middle */
+            right: 10px; /* Adjust right position */
+            transform: translateY(-50%); /* Adjust vertical position to center */
+            width: 100px; /* Set width of the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\subra\OneDrive\Desktop\HTML\hospital_img.jpg" alt="Hospital Image">
+    <h1>PSG Hospitals</h1>
+    <h2>Patients</h2>
+    <!-- Container div -->
+    <div class="container">
+        <!-- First blue box -->
+        <div class="blue-box">
+            <h3>Patient_name 1</h3>
+            <p>Mild attack</p>
+        </div>
+        
+        <!-- Second blue box -->
+        <div class="blue-box">
+            <h3>Patient_name 2</h3>
+            <p>Cloud and cough</p>
+        </div>
+
+        <!-- Third blue box -->
+        <div class="blue-box">
+            <h3>Patient_name 3</h3>
+            <p>Knee pain</p>
+        </div>
+
+        <!-- Fourth blue box -->
+        <div class="blue-box">
+            <h3>Patient_name 4</h3>
+            <p>Fever</p>
+        </div>
+    </div>
+</body>
+</html>
